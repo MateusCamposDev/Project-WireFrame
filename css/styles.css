@@ -1,0 +1,48 @@
+@import url("./reset.css");
+@import url("./grid.css");
+@import url("./variables.css");
+@import url("./patterns.css");
+@import url("./responsive.css");
+
+.header-bg {
+    background-color: var(--gray-colors-800);
+    width: 100%;
+    height: 8.8rem;
+    display: flex;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header .menu-mobile {
+    display: none;
+}
+
+header nav ul {
+    display: flex;
+    gap: 3.2rem;
+
+}
+
+header nav .btn-primary {
+    padding: 0.9rem 3.4rem;
+    margin-left: 3.2rem;
+}
+
+@media(max-width: 1040px){
+    header nav {
+        display: none;
+    }
+
+    header .menu-mobile {
+        display: block;
+    }
+}
