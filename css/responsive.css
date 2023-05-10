@@ -1,8 +1,11 @@
 @media(max-width: 1200px) {
-
+    .s-hero .text-hero {
+        width: 49%;
+    }
 }
 
 @media(max-width: 768px) {
+
     
 }
 
@@ -11,7 +14,31 @@
 }
 
 @media(max-width: 480px) {
+    html {
+        font-size: 55% !important;
+    }
+
     header .logo {
         max-width: 130px;
+    }
+
+    .s-hero {
+        padding: 4rem 0px;
+    }
+
+    .s-hero .text-hero p {
+        margin-bottom: 3rem;
+    }
+
+    .s-hero .hero-img {
+        height: 30rem !important;
+    }
+
+    .s-hero .hero-img img{
+        max-width: 10rem;
+    }
+
+    h1 {
+        font-size: 4.2rem;
     }
 }
