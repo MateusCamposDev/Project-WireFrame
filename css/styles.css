@@ -1,9 +1,3 @@
-@import url("./reset.css");
-@import url("./grid.css");
-@import url("./variables.css");
-@import url("./patterns.css");
-@import url("./responsive.css");
-
 .header-bg {
     background-color: var(--gray-colors-800);
     width: 100%;
@@ -84,27 +78,76 @@ header nav .btn-primary {
     align-items: center;
 }
 
-@media(max-width: 1040px){
-    header nav {
-        display: none;
-    }
+.s-card-featured {
+    background-color: var(--gray-colors-100);
+    padding-top: 10.4rem; padding-bottom: 12rem;
+}
 
-    header .menu-mobile {
-        display: block;
-    }
+.s-card-featured .main-area {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.025);
+    padding-bottom: 12.5rem;
+}
 
-   .s-hero .container {
-    flex-direction: column;
-   }
-
-   .s-hero .text-hero {
-    max-width: 100%;
+.s-card-featured .title {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    margin-bottom: 4.0rem;
-
-    text-align: center;
-   }
 }
+
+.s-card-featured .title.center {
+    align-items: center;
+}
+
+.s-card-featured p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.s-card-featured .title p{
+    margin-top: 0.8rem;
+}
+
+.s-card-featured .all-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4.8rem;
+}
+
+.s-card-featured .all-cards .card {
+    width: 100%;
+    max-width: 38.4rem;
+    height: 38.2rem;
+    background-color: rgba(28, 29, 31, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6.4rem;
+}
+
+.s-card-featured .all-cards .card.bg-white {
+   background-color: var(--white);
+}
+
+.s-card-featured .all-cards .card.bg-white h3 {
+    color: var(--gray-colors-100);
+}
+
+.s-card-featured .all-cards .card.bg-white p {
+    color: var(--gray-colors-300);
+}
+
+.s-card-featured .all-cards .card .info {
+    margin-top: 4rem;
+    max-width: 28.8rem;
+}
+
+.s-card-featured .all-cards .card .info h3, p{
+    text-align: center;
+}
+
+.s-card-featured .all-cards .card .info p{
+    margin-top: 0.8rem;
+    text-align: center;
+    line-height: 150%;
+}
+
+
